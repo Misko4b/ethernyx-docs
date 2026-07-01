@@ -45,10 +45,10 @@ Sits a fixed step under the top.
 
 ### Matched <mark style="color:orange;">Blur</mark>
 
-Matches the top bid exactly.
+A flat offer parked at your Max Bid.
 
-* **How it prices:** places at the **same price as the current top bid**, never above your Max Bid.
-* **When to use:** you want to join the top level without pushing the price up. Match the leader, share the spot.
+* **How it prices:** it just bids **your Max Bid, exactly** — every time, no matter what the top bid or the rest of the book is doing. It doesn't chase anyone or step around other offers; your Max Bid _is_ the offer.
+* **When to use:** you've decided the exact number you're willing to pay and want to sit right there, no dynamic outbidding. Set Max Bid to that number and it holds the line.
 
 {% hint style="info" %}
 **Bidding on All markets?** Pick a marketplace-agnostic mode (Standard / Smart) and Ethernyx runs the right strategy on each side. The Blur-only modes above only show up when the task's marketplace is Blur.
