@@ -25,7 +25,15 @@
   * [Parameters](collection-bidder/parameters.md)
   * [Tips & Rules](collection-bidder/tips-and-rules.md)
 * [Floor Lister](floor-lister.md)
+  * [Owned Assets](floor-lister/owned-assets.md)
+  * [Creating a Listing](floor-lister/creating-a-listing.md)
+  * [Managing Tasks](floor-lister/managing-tasks.md)
 * [📈 Analytics](analytics.md)
+
+## Security & FAQ
+
+* [🔒 Security](security.md)
+* [❓ FAQ](faq.md)
 
 ## RESOURCES
 
