@@ -17,7 +17,7 @@ What actually gets saved is an **encrypted blob**, nothing else. Your key is **n
 
 The key that can decrypt your wallet lives in a **single hardened, private service** — the one that runs the bot. Nothing else has it: not the website, not the public API, not the database.
 
-* That decryption key is **entered by hand when the service starts** and is **never written to disk**. It's wiped from memory right after startup.
+* That decryption key lives **only in the running service's memory** — it's **never written to disk** and never stored anywhere it can be read back.
 * Your wallet key is only ever decrypted **in memory, for the split second it takes to sign** an offer or listing — then it's **immediately zeroed out** of memory.
 * Keys are **never written to disk and never logged.** Logs only ever reference a user ID and the first few characters of a wallet address.
 
@@ -36,25 +36,24 @@ Being straight with you: to bid and list for you, the bot **does** sign with you
 
 **It can:**
 
-* Sign **offers (bids)** and **listings** — the marketplace orders you set up in your tasks.
-
-That's it. These are **off-chain signatures** (EIP-712 / Seaport orders) that OpenSea and Blur read to place your bids and listings.
+* Sign your **bids** and **listings** — off-chain marketplace orders (EIP-712 / Seaport) that OpenSea and Blur read to place your offers.
+* **Wrap your ETH into WETH** and **deposit into the Blur bidding pool (BETH)** — the balances OpenSea and Blur need to back your bids. These funds stay **on your own wallet**, just in the form each marketplace requires; they aren't sent anywhere.
 
 **It cannot:**
 
-* Transfer, withdraw, or move your ETH or NFTs anywhere.
-* Send funds to any address.
-* Run arbitrary on-chain transactions (no swaps, no transfers, no approvals you didn't trigger).
+* Transfer, withdraw, or move your ETH or NFTs to any outside address.
+* Send your funds to anyone.
+* Do anything beyond funding and placing the bids and listings you set up.
 
-The bot only ever acts **within the parameters you set** on a task. It can't drain a wallet, because placing a signed bid or listing is the only thing it's built to do with your key.
+The bot only ever acts **within the parameters you set** on a task. It can't drain a wallet or move your assets out — placing your bids and listings (and funding them as WETH/BETH on your own wallet) is the only thing it's built to do.
 
 ## Sign-in with no passwords
 
-You log in by **signing a message with your wallet** (MetaMask, Rabby, WalletConnect). There's no password and no email to leak — just a Web3 signature that proves the wallet is yours.
+You log in by **signing a message with your wallet** (MetaMask, Rabby, WalletConnect) — no password, no email. This is **far safer than a password**: there's no credential to phish, leak, or reuse, and nothing sitting in a database to steal. The only key to your account is your wallet's signature, so **only you can get in** — nobody else can reach your account, your tasks, your keys, or your funds.
 
-## Payments are verified on-chain
+For an extra layer, your **login session expires every 12 hours** — after that you sign a fresh message to continue, so even a stolen session token is dead within half a day.
 
-Every subscription payment is **checked against the Ethereum blockchain** before your plan activates — the transaction has to be confirmed, sent to the right address, for the right amount, and recent. No off-chain "trust me" — the chain is the source of truth.
+To be completely clear: **no one — under any circumstances — can access your tasks, your keys, or your funds. Not us, not an attacker, no one but you.**
 
 ## No secrets in your browser
 
