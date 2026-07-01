@@ -31,6 +31,10 @@ Sharing your private key is the same as handing over your wallet and all your fu
 2. Enter the wallet private key you wish to import from an existing wallet (e.g MetaMask, Rabby)
 3. Click "Save Wallet"
 
+{% hint style="info" %}
+**Is it safe to paste my private key here?** Yes. The instant you save it, your key is encrypted and locked inside a hardened, isolated service — never stored in plaintext, never logged, and only ever able to sign the bids and listings you set up. It can't send or withdraw your funds. See [Security](security.md) for the full picture.
+{% endhint %}
+
 ### How to Export Private Keys from MetaMask <a href="#how-to-export-private-keys-from-metamask" id="how-to-export-private-keys-from-metamask"></a>
 
 1. Open your MetaMask wallet.

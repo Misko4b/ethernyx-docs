@@ -8,7 +8,7 @@ icon: circle-question
 ## Getting started
 
 **What is Ethernyx?**\
-A cloud bidding bot for OpenSea and Blur. You connect a wallet, set up a task, and it bids, counter-bids, cancels stale offers, and re-lists your fills — 24/7, nothing running on your machine. Full intro on [Welcome](README.md).
+A cloud bidding bot for OpenSea and Blur. You connect a wallet, set up a task, and it bids, counter-bids, cancels stale offers, and re-lists your fills — 24/7, nothing running on your machine. It's also built for **raw speed** — the fastest throughput you'll find for Blur, the Floor Lister, and especially **OpenSea token bids**, where it's simply in a different league than any other bot out there. Full intro on [Welcome](README.md).
 
 **Do I need to download or install anything?**\
 No. Ethernyx runs entirely in the cloud — open [app.ethernyx.io](https://app.ethernyx.io/) in any browser, including on your phone. No VPS, no node, no app.
@@ -34,7 +34,9 @@ Usual suspects:
 * The collection has **Collection/Trait Offers disabled** for your mode — switch modes.
 * Your OpenSea nickname is **missing the prefix** (see below).
 * Not enough **WETH/BETH** on the wallet to cover the offers.
-* The task is **paused** — imported tasks always start paused.
+* You've **hit your Max Buy** — the task pauses until you sell what you bought (unless it's set to auto-resume).
+
+For the exact reason, open the task's **live logs** (the logs button on its card) — they show, offer by offer, why the bot is or isn't bidding.
 
 **What do the red / amber task cards mean?**\
 Red = you can't outbid the top with your current Max Bid. Amber = a limit (min floor, min profit) is holding you back, or half your token bids are out of reach. No tint = you're competitive. Details on [Managing Tasks](collection-bidder/managing-tasks.md).

@@ -17,7 +17,6 @@ What actually gets saved is an **encrypted blob**, nothing else. Your key is **n
 
 The key that can decrypt your wallet lives in a **single hardened, private service** — the one that runs the bot. Nothing else has it: not the website, not the public API, not the database.
 
-* That decryption key lives **only in the running service's memory** — it's **never written to disk** and never stored anywhere it can be read back.
 * Your wallet key is only ever decrypted **in memory, for the split second it takes to sign** an offer or listing — then it's **immediately zeroed out** of memory.
 * Keys are **never written to disk and never logged.** Logs only ever reference a user ID and the first few characters of a wallet address.
 
