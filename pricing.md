@@ -4,18 +4,41 @@ icon: circle-dollar
 
 # Pricing
 
-Here's 4 types of **subscriptions**:
+Pick the plan that fits your bidding volume, wallet count, and strategy. You pay in **ETH** — monthly, or prepay a few months and save up to **45%**.
 
-* Free: Free test for those who want to try before purchasing a subscription. 1 wallet, 2 task depth
-* Starter: 1 wallet, 50 task depth
-* Pro: 2 wallets, 250 task depth
-* Ultimate: 5 wallets, 1000 task depth
+## 💳 Plans
 
-#### What is task depth?
+| Plan | Bids/sec | Wallets | Tasks | Price |
+|---|---|---|---|---|
+| 🆓 **Free** | 1 | 1 | 2 bidding (+ unlimited Floor Lister) | Free forever |
+| ⭐ **Lite** | 5 | 2 | 100 | 0.05 ETH / mo |
+| ⚡ **Starter** | 30 | 3 | Unlimited | 0.20 ETH / mo |
+| 🚀 **Base** | 60 | 5 | Unlimited | 0.30 ETH / mo |
+| 💎 **Pro** | 100 | 5 | Unlimited | 0.45 ETH / mo |
+| 👑 **Ultimate** | 150 | 10 | Unlimited | 0.65 ETH / mo |
 
-> Task Depth - This is the value that is used when you create tasks in Ethernyx. It is equal to 1 for each collection offers. For each selected trait or ID, another +1 is added. For floor lister it is always 1.
->
-> For example:
->
-> Task with Bid Mode: Smart IDs, selected trait Background: All. It has 100 tokens. So depth for this task will be 100. Or Bid Mode: Standard, selected trait Background: All. It counts 5 attributes, so the depth for this task will be 5.
+Every plan includes **Floor Lister** and **Blur bidding** — no marketplace paywalls.
 
+{% hint style="info" %}
+**Item (token) bidding** — the `IDs` / `Smart IDs` modes that offer on specific token IDs — unlocks on **Starter and up**. Free and Lite cover collection and trait bidding.
+{% endhint %}
+
+## 🛠 Custom Plan
+
+Need more than 150 bids/sec, extra wallets, or limits tailored to your setup? Open a ticket in [our Discord](https://discord.com/channels/1519452310642757793/1520999442788913182) and we'll put a plan together for you.
+
+## 💰 Prepaid discounts
+
+Prepay upfront and knock down the monthly rate:
+
+| Term | Discount |
+|---|---|
+| 3 months | −15% |
+| 6 months | −25% |
+| 12 months | −45% |
+
+## ➕ Add-ons
+
+| Add-on | Price | What you get |
+|---|---|---|
+| **No-Prefix** | 0.04 ETH / mo | Run OpenSea tasks without the required `ethernyx_dot_io_` nickname prefix — bid with any nickname on your wallet. Included free on **Ultimate**. |

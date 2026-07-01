@@ -1,7 +1,9 @@
 # ⚡ Welcome to Ethernyx
 
-Welcome to Ethernyx, the ultimate platform for automated NFT bidding and flipping. We offer advanced bidding bots for Blur and OpenSea with web app designed specifically for NFT traders!
+Ethernyx is a cloud bidding bot for **OpenSea** and **Blur**. Connect a wallet, set up a task, and it bids, counter-bids, cancels stale offers, and relists your fills for you — around the clock. No VPS, no downloads, nothing to babysit.
 
-Our tools provide collection bidding, trait bidding, IDs bidding and listing at instant speed, bulk task management, collection and wallets analytics, flexible subscription options, and robust protection —giving you unmatched speed, precision, and security in every flip.
+It's built for people who actually flip NFTs. You get **collection offers**, **trait offers**, and **token (ID) offers**, plus a **Floor Lister** that re-lists anything you buy the moment it lands in your wallet. Run hundreds of tasks at once, keep an eye on your wallets and collections in **Analytics**, and let it grind while you sleep.
 
-These docs will guide you through Ethernyx, our advanced bidding tools — helping you flip NFTs faster and smarter.
+These docs cover all of it — from setting up your first wallet to knowing exactly which bid mode to reach for and why.
+
+New here? Jump into [First-Time Users](get-started/first-time-users.md) and you'll be bidding in a few minutes.
